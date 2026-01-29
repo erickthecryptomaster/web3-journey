@@ -1,0 +1,9 @@
+{
+  "name": "web3-journey",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "read-block.js",
+  "dependencies": {
+    "ethers": "^6.16.0"
+  }
+}

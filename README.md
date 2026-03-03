@@ -1,16 +1,22 @@
-# 🏦 Vault Smart Contract (Hardhat Project)
+# 🏦 Web3 Security Vault
 
-This project implements a secure ETH Vault smart contract built with Solidity and Hardhat.
+A secure ETH Vault smart contract built with Solidity and Hardhat.
+
+This project demonstrates secure smart contract design using modern best practices in Web3 development.
+
+---
 
 ## 🔐 Security Features
 
-- Reentrancy protection (ReentrancyGuard)
+- Reentrancy protection (OpenZeppelin ReentrancyGuard)
 - Emergency stop mechanism (Pausable)
 - Ownership control (Ownable)
 - Checks-Effects-Interactions pattern
 - Event logging for transparency
 
-## 📦 Contract Features
+---
+
+## 📦 Contract Capabilities
 
 Users can:
 - Deposit ETH
@@ -20,7 +26,7 @@ Users can:
 
 Owner can:
 - Pause deposits and withdrawals
-- Unpause the contract
+- Resume contract operations
 
 ---
 
@@ -29,8 +35,9 @@ Owner can:
 - Solidity ^0.8.20
 - Hardhat
 - OpenZeppelin Contracts
-- Mocha + Chai (Testing)
 - Ethers.js
+- Mocha & Chai
+- Node.js
 
 ---
 
@@ -38,3 +45,7 @@ Owner can:
 
 ```bash
 npx hardhat test
+
+## Test Coverage
+
+✔ High coverage on core contract logic

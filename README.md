@@ -1,13 +1,40 @@
-# Sample Hardhat Project
+# 🏦 Vault Smart Contract (Hardhat Project)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project implements a secure ETH Vault smart contract built with Solidity and Hardhat.
 
-Try running some of the following tasks:
+## 🔐 Security Features
 
-```shell
-npx hardhat help
+- Reentrancy protection (ReentrancyGuard)
+- Emergency stop mechanism (Pausable)
+- Ownership control (Ownable)
+- Checks-Effects-Interactions pattern
+- Event logging for transparency
+
+## 📦 Contract Features
+
+Users can:
+- Deposit ETH
+- Withdraw ETH up to their balance
+- Check their balance
+- View total contract balance
+
+Owner can:
+- Pause deposits and withdrawals
+- Unpause the contract
+
+---
+
+## 🛠 Tech Stack
+
+- Solidity ^0.8.20
+- Hardhat
+- OpenZeppelin Contracts
+- Mocha + Chai (Testing)
+- Ethers.js
+
+---
+
+## 🧪 Run Tests
+
+```bash
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
